@@ -21,10 +21,13 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 400px;
     padding: 40px 60px;
-    box-shadow: 1px 1px 20px #171717;
+    -webkit-box-shadow: 1px 1px 20px #171717;
+            box-shadow: 1px 1px 20px #171717;
     opacity: .9;
 
 }
@@ -52,6 +55,8 @@ input {
     font-size: 14px;
     background: #5168f4;
     text-align: center;
+    -webkit-transition: background 500ms ease;
+    -o-transition: background 500ms ease;
     transition: background 500ms ease;
     color: white;
 }
